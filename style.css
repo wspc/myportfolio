@@ -24,9 +24,9 @@
 	list-style-type: none;
 	display:inline;
 	padding:3%;
-
-
 }
+
+
 
 
 #homebutton {
@@ -39,20 +39,50 @@
 	margin:5% auto;
 }
 
-#workbar{
-	margin:0 auto;
-	width: 100%;
-	text-align: left;
 
+ #index{
+	display:block;
 }
 
-#workbar li.button2{
-	list-style-type: none;
-	display:inline;
-	padding:3%;
-	letter-spacing: 0.2em;
+#index-button{
+	opacity:1.0;
+}
+
+#work{
+	display:none;
+}
+
+#work-button{
+	opacity:0.3;
+}
+
+#blog{
+	display:none;
+}
+
+#blog-button{
+	opacity:0.3;
+}
+
+
+#resume{
+	display:none;
+	}
+
+#resume-button{
+	opacity:0.3;
+}
+
+#about{
+	display:none;
+}
+
+#about-button{
+	opacity:0.3;
+
 	
 }
+
 
 li.button2 a:hover{
 	opacity: 0.5;
@@ -70,24 +100,14 @@ li.button2 a:link{
 
 
 
-
-
-
 li.button2 a{
 	font-family:"avant-med";
 	color:black;
 	font-size: 1.5em;
 	text-decoration: none;
 }
-#proj{
-	margin-top:5%;
-
-}
 
 
-#proj h4{
-	margin-top:3%;
-}
 
 
 

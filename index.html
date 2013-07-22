@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Samantha Wong</title>
+		<title>s a m a n t h a W o n g</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="tablet.css" />
 
@@ -12,13 +12,16 @@
 	
 		$(function(){
 		
-			$("#aboutbutton").css({
+			$("#work-button").css({
 				opacity: 0.3
 			});
-			$("#workbutton").css({
+			$("#blog-button").css({
 				opacity: 0.3
 			});
-			$("#contact").css({
+			$("#about-button").css({
+				opacity: 0.3
+			});
+			$("#resume-button").css({
 				opacity: 0.3
 			});
 
@@ -32,7 +35,7 @@
             		
             		$clicked.animate({
             			opacity: 1,
-            			borderWidth: 5
+            			
             		}, 600 );
             		
             		
@@ -48,7 +51,7 @@
             	
             	$clicked.siblings(".button").animate({
             		opacity: 0.3,
-            		borderWidth: 1
+            		
             	}, 600 );
             	
             });
@@ -65,33 +68,100 @@
  
 	<body>
 	<div id ="home">
-
 	
 	<div id="bar">
 
-		<li id="homebutton" class="button">
-			<a href="index.html"> <img src="img/nav/2home2.png" alt="home" class="button"/></a>
+		<li id="index-button" class="button">
+			<img src="img/logo3.png" alt="logo" class="button" /></li>
+
+		<li id="blog-button" class="button">
+	 <img src="img/nav/blog3.png" alt="blog" class="button"/></li>
+
+		<li id="work-button" class="button">
+		<img src="img/nav/work3.png" alt="work" class="button"/>
 		</li>
 
-		<li id="aboutbutton" class="button">
-			<a href="about.html"><img src="img/nav/2about2.png" alt="about" class="button"/></a>
+		<li id="about-button" class="button">
+			<img src="img/nav/about4.png" alt="works" class="button"/>
 		</li>
 
-		<li id="workbutton" class="button">
-			<a href="mywork.html"><img src="img/nav/2work2.png" alt="works" class="button"/></a>
-		</li>
-
-		<li id="contact" class="button">
-			<a href="contact.html"><img src="img/nav/2contact.png" alt="contact" class="button"/></a>
-		</li>
+		<li id="resume-button" class="button">
+			<img src="img/nav/resume3.png" alt="resume" class="button"/><li>
 
 
 	</div><!--end div home-->
 	
+
+<div id="clear"></div>
+
 	<div id="content">
 
-		home 
-	</div>
+
+		<div id="index">
+
+		indexindex
+
+    	</div>
+ 
+		
+	
+	
+		<div id="work">
+			workwrok
+		</div>
+
+
+
+
+		<div id="blog">
+
+		<h4> home </h4>
+
+		</div>
+
+
+
+
+
+		<div id="resume">
+
+		resume resume 
+
+		</div> 
+
+
+		<div id="about">
+
+			about about
+
+
+		</div>
+
+<!--
+		<div id="proj">
+
+			<h4>Draft</h4>
+
+
+			<li><a href="img/project/pub1.png"> <img src="img/project/pub1.png" alt="pub1" height="50%" width="50%"/></a></li>
+			<li><a href="img/project/pub1-3.png"> <img src="img/project/pub1-3.png" alt="pub3-4" height="50%" width="50%"/></a></li>
+
+			<BR>
+
+
+			<h4>Final</h4>
+
+			<li><a href="img/project/pub4.png"> <img src="img/project/pub4.png" alt="pub4" height="50%" width="50%"/></a></li>
+
+			<li><a href="img/project/pub1-2.png"> <img src="img/project/pub1-2.png" alt="pub1-2" height="50%" width="50%"/></a></li>
+
+
+
+
+-->
+
+		
+</div>
 
 	<footer>
 		&#169;2013 Samantha Wong

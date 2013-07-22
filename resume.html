@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>about</title>
+		<title>contact</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="tablet.css" />
 
@@ -18,7 +18,7 @@
 			$("#workbutton").css({
 				opacity: 0.3
 			});
-			$("#resume").css({
+			$("#aboutbutton").css({
 				opacity: 0.3
 			});
 
@@ -27,7 +27,6 @@
             	
             	$clicked = $(this);
             	
-            	
             	if ($clicked.css("opacity") != "1" && $clicked.is(":not(animated)")) {
             		
             		$clicked.animate({
@@ -35,12 +34,12 @@
             			borderWidth: 5
             		}, 600 );
             		
-            		
+            	
             		var idToLoad = $clicked.attr("id").split('-');
             		
             		
             		$("#content").find("div:visible").fadeOut("fast", function(){
-            			
+        
             			$(this).parent().find("#"+idToLoad[0]).fadeIn();
             		})
             	}
@@ -64,6 +63,8 @@
  
  
 	<body>
+	<div id="box">
+
 	<div id ="home">
 	
 	<div id="bar">
@@ -89,15 +90,17 @@
 	</div><!--end div home-->
 	
 	<div id="content">
-			<h1> about </h1>
-	<p>A 4th year student at Simon Fraser University.</p>
-	<p>Majoring in Economics</P>
-
-	<p>Minor in Print and Digital Publishing and
-
-School of Interactive Art & Technology </p>
 		
-	</div>
+
+		
+
+
+		
+	
+
+
+		
+
 	
 	<footer>
 		&#169;2013 Samantha Wong
@@ -106,6 +109,6 @@ School of Interactive Art & Technology </p>
 	</div>
 	
 
-   
+	   
 </body>
 </html>
