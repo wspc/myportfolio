@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Samantha Wong</title>
+		<title>contact</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="tablet.css" />
 
@@ -12,13 +12,13 @@
 	
 		$(function(){
 		
+			$("#homebutton").css({
+				opacity: 0.3
+			});
 			$("#aboutbutton").css({
 				opacity: 0.3
 			});
 			$("#workbutton").css({
-				opacity: 0.3
-			});
-			$("#contact").css({
 				opacity: 0.3
 			});
 
@@ -27,7 +27,6 @@
             	
             	$clicked = $(this);
             	
-            	
             	if ($clicked.css("opacity") != "1" && $clicked.is(":not(animated)")) {
             		
             		$clicked.animate({
@@ -35,12 +34,12 @@
             			borderWidth: 5
             		}, 600 );
             		
-            		
+            	
             		var idToLoad = $clicked.attr("id").split('-');
             		
             		
             		$("#content").find("div:visible").fadeOut("fast", function(){
-            			
+        
             			$(this).parent().find("#"+idToLoad[0]).fadeIn();
             		})
             	}
@@ -64,42 +63,44 @@
  
  
 	<body>
-	<div id ="home">
+	<div id="box">
 
+	<div id ="home">
 	
 	<div id="bar">
 
 		<li id="homebutton" class="button">
-			<a href="index.html"> <img src="img/nav/2home2.png" alt="home" class="button"/></a>
+			<a href="index.html"> <img src="img/nav/2home.png" alt="home" class="button"/></a>
 		</li>
 
 		<li id="aboutbutton" class="button">
-			<a href="about.html"><img src="img/nav/2about2.png" alt="about" class="button"/></a>
+			<a href="about.html"><img src="img/nav/2about.png" alt="about" class="button"/></a>
 		</li>
 
 		<li id="workbutton" class="button">
-			<a href="mywork.html"><img src="img/nav/2work2.png" alt="works" class="button"/></a>
+			<a href="mywork.html"><img src="img/nav/2work.png" alt="works" class="button"/></a>
 		</li>
 
 		<li id="contact" class="button">
 			<a href="contact.html"><img src="img/nav/2contact.png" alt="contact" class="button"/></a>
-		</li>
+		</li>		
 
 
 	</div><!--end div home-->
 	
 	<div id="content">
+		
 
-		home 
+		
 	</div>
-
+	
 	<footer>
 		&#169;2013 Samantha Wong
 	</footer>
 
 	</div>
 	
-
-   
+</div>
+	   
 </body>
 </html>

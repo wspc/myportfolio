@@ -1,0 +1,106 @@
+
+@font-face{
+	font-family:"din-med";
+	src:url('font/DINPro-Medium.otf');
+
+}
+
+
+@font-face{
+	font-family:"avant-med";
+	src:url('font/ITCAvantGardeStd-Md.otf');
+}
+
+
+#home{
+	margin: 3% auto;
+	max-width: 80%;
+	
+
+
+}
+
+#bar li{
+	list-style-type: none;
+	display:inline;
+	padding:3%;
+
+
+}
+
+
+#homebutton {
+	padding-left:1%;
+	
+}
+
+#content{
+	max-width:75%;
+	margin:5% auto;
+}
+
+#workbar{
+	margin:0 auto;
+	width: 100%;
+	text-align: left;
+
+}
+
+#workbar li.button2{
+	list-style-type: none;
+	display:inline;
+	padding:3%;
+	letter-spacing: 0.2em;
+	
+}
+
+li.button2 a:hover{
+	opacity: 0.5;
+}
+
+li.button2 a:visited{
+	color:#F76C66;
+}
+
+li.button2 a:link{
+	color:#F76C66;
+}
+
+
+
+
+
+
+
+
+li.button2 a{
+	font-family:"avant-med";
+	color:black;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+#proj{
+	margin-top:5%;
+
+}
+
+
+#proj h4{
+	margin-top:3%;
+}
+
+
+
+
+
+
+#proj li{
+	float:right;
+	list-style-type: none;
+}
+
+footer{
+margin-top:5%;
+margin-bottom:5%;
+text-align:center;
+}
