@@ -13,8 +13,8 @@
 
 
 #home{
-	margin: 3% auto;
-	max-width: 80%;
+	margin: 2% auto;
+	max-width: 90%;
 	
 
 
@@ -23,7 +23,7 @@
 #bar li{
 	list-style-type: none;
 	display:inline;
-	padding:3%;
+	padding:2%;
 }
 
 
@@ -80,7 +80,7 @@
 #about-button{
 	opacity:0.3;
 
-	
+
 }
 
 
