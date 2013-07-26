@@ -2,10 +2,13 @@
 <html>
 	<head>
 		<title>s a m a n t h a W o n g</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="tablet.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="css/tablet.css" />
 
 	
+
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'/>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
@@ -42,7 +45,7 @@
             		var idToLoad = $clicked.attr("id").split('-');
             		
             		
-            		$("#content").find("div:visible").fadeOut("fast", function(){
+            		$("#content").find(".block:visible").fadeOut("fast", function(){
             			
             			$(this).parent().find("#"+idToLoad[0]).fadeIn();
             		})
@@ -56,6 +59,40 @@
             	
             });
 		});
+
+<!-- took from -->
+
+
+
+
+$(document).ready(function(){
+ 
+    activeItem = $("#accordion li:first");
+    $(activeItem).addClass('active');
+ 
+    $("#accordion li").hover(function(){
+        $(activeItem).animate({width: "50px"}, {duration:300, queue:false});
+        $(this).animate({width: "450px"}, {duration:300, queue:false});
+        activeItem = this;
+    });
+ 
+});
+
+$(document).ready(function(){
+ 
+    activeItem = $("#accordion2 li:first");
+    $(activeItem).addClass('active');
+ 
+    $("#accordion2 li").hover(function(){
+        $(activeItem).animate({width: "50px"}, {duration:300, queue:false});
+        $(this).animate({width: "450px"}, {duration:300, queue:false});
+        activeItem = this;
+    });
+ 
+});
+
+
+<!--http://www.designchemical.com/blog/index.php/jquery/jquery-simple-horizontal-accordion/-->
 		
 	</script>
 
@@ -69,36 +106,58 @@
 	<div id ="home">
 
 	
+	<nav>
+
 	<div id="bar">
 
+		<div id="bar2">
+		<a href="mailto:spw7@sfu.ca"><img src="img/email.png" alt="email" height="50px" width="50px"/></a>
+		<a href="http://www.facebook.com/"><img src="img/fb.png" alt="fb" height="50px" width="50px"/></a>
+		<a href="http://www.instagram.com/"><img src="img/insta.png" alt="insta" height="50px" width="50px"/></a>
+	</div>
+
 		<li id="index-button" class="button">
-			<img src="img/logo6.png" alt="logo" class="button" /></li>
+			<img src="img/3logo.png" alt="logo" class="button"  /></li>
 
 		<li id="blog-button" class="button">
-	 <img src="img/nav/blog3.png" alt="blog" class="button"/></li>
+	 <img src="img/nav/blog3.png" alt="blog" class="button" /></li>
 
 		<li id="work-button" class="button">
-		<img src="img/nav/work3.png" alt="work" class="button"/>
+		<img src="img/nav/work3.png" alt="work" class="button" />
 		</li>
 
 		<li id="about-button" class="button">
-			<img src="img/nav/about4.png" alt="works" class="button"/>
+			<img src="img/nav/about4.png" alt="works" class="button" />
 		</li>
 
 		<li id="resume-button" class="button">
-			<img src="img/nav/resume3.png" alt="resume" class="button"/><li>
+			<img src="img/nav/resume3.png" alt="resume" class="button" /><li>
 
 
-	</div><!--end div home-->
+		
+
 	
+	</div><!--end div home-->
+</nav>	
+	
+		
 
+	
 
 	<div id="content">
 
 
-		<div id="index">
+		<div id="index" class="block">
 
-		indexindex
+		Hello
+		<br>
+
+		slideshow is gonna be here
+
+		<div id="slide">
+			<h1>dfqfq
+			</h1>
+		</div>
 
 
     	</div>
@@ -106,7 +165,58 @@
 		
 	
 	
-		<div id="work">
+		<div id="work" class="block">
+
+			<h3>M a g a z i n e</h3>
+		
+
+		<ul id="accordion">
+			<li>
+			<img src="" />
+			<strong> section1</strong>
+			<br/>
+			Background
+
+			</li>
+			<li>
+			<img src="" />
+			<strong> section2</strong><br/>
+			Process
+			</li>
+			<li>
+			<img src=""/>
+			<strong>section3 </strong><br/>
+			Final
+			</li>
+			
+
+		</ul>
+	<p>para </p>
+
+
+			<h3> C e r e a l </h3>
+			xs
+		<ul id="accordion2">
+			<li>
+			<img src="" />
+			<strong> section1</strong><br/>
+			Background
+			</li>
+			<li>
+			<img src="" />
+			<strong> section2</strong><br/>
+			Process
+			</li>
+			<li>
+			<img src=""/>
+			<strong>section3 </strong><br/>
+			Final
+			</li>
+			
+		</ul>
+	<p>para </p>
+
+<!--
 			<h4>Draft</h4>
 
 
@@ -121,7 +231,7 @@
 			<li><a href="img/project/pub4.png"> <img src="img/project/pub4.png" alt="pub4" height="50%" width="50%"/></a></li>
 
 			<li><a href="img/project/pub1-2.png"> <img src="img/project/pub1-2.png" alt="pub1-2" height="50%" width="50%"/></a></li>
-
+-->
 
 
 		</div>
@@ -129,9 +239,9 @@
 
 
 
-		<div id="blog">
+		<div id="blog" class="block">
 
-		<h4> home </h4>
+		<h4> blog</h4>
 
 		</div>
 
@@ -139,7 +249,7 @@
 
 
 
-		<div id="resume">
+		<div id="resume" class="block">
 
 		<img src="img/resume1.png" alt="resume1"/>
 		<img src="img/resume2.png" alt="resume2"/>
@@ -147,16 +257,18 @@
 		</div> 
 
 
-		<div id="about">
+		<div id="about" class="block">
 
-			<a href="img/about/1.jpg"><img src="img/about/1.jpg" alt="photo1" height="200px" width="300px" /></a>
-			<a href=""><img src="img/about/2.jpg" alt="photo2" height="200px" width="200px" /></a>
-			<a href=""><img src="img/about/3.jpg" alt="photo3" height="200px" width="200px" /></a>
-			<a href=""><img src="img/about/4.jpg" alt="photo4" height="75px" width="75px" /></a>
-			<a href=""><img src="img/about/5.jpg" alt="photo5" height="75px" width="75px" /></a>
-			<a href=""><img src="img/about/6.jpg" alt="photo6" height="75px" width="75px" /></a>
+			<a href="img/about/me.jpg"><img src="img/about/me.jpg" alt="photo1" height="150px" width="230px" /></a>
+			<a href=""><img src="img/about/2.jpg" alt="photo2" height="150px" width="150px" /></a>
+			<a href=""><img src="img/about/food2.jpg" alt="photo3" height="150px"  /></a>
+			
+			
+			
+			<a href=""><img src="img/about/5.jpg" alt="photo6" height="150px" width="150px" /></a>
+			<a href=""><img src="img/quote2.jpg" alt="photo5" height="150px" width="250px"/></a>
 
-
+<a href="img/about/1.jpg"><img src="img/about/1.jpg" alt="photo1" height="150px" width="230px" /></a>
 
 
 		
@@ -169,7 +281,12 @@
 </div>
 
 	<footer>
+
+		<!--
 		&#169;2013 Samantha Wong
+
+		-->
+
 	</footer>
 
 	</div>
