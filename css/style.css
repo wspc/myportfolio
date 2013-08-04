@@ -5,13 +5,13 @@ body, html{
 
 #home{
 	margin: 2% auto;
-	max-width: 70%;	
+	max-width: 80%;	
 
 }
 
 #bar2{
 	display:inline-block;
- 	float:bottom;
+ 	float:right;
 }
 
 #bar2 a:hover{
@@ -21,12 +21,13 @@ body, html{
 
 #bar ul{
 	list-style-type: none;
-	display:inline
+	display:inline;
  
 }
 
 #bar3 {
   float: left;
+  display:inline;
 
 
 }
@@ -39,6 +40,9 @@ body, html{
 	opacity: 0.5;
 }
 
+.button a:active{
+	opacity:0.5;
+}
 
 
 #content{
@@ -51,7 +55,13 @@ body, html{
 
 #index{
 	margin:0% auto;
-	max-width:70%;
+	max-width:50%;
+}
+
+
+#blog{
+	margin:0 auto;
+	width:50%;
 }
 
 #blog p{
@@ -63,69 +73,56 @@ body, html{
 	
 }
 
+
 #resume{
-	display:block;
-	width:90%;
-	margin:0 auto;
+	width:815px;
 }
 
 
 
-
-
-#resume #summary ul{
+.resume #summary ul{
 	padding-left:1%;
 	
 }
 
 
-#resume #summary li{
+.resume #summary li{
 	background: none;
-	font-size:83%;
-	color:#4F4A52;
+
+	
 }
 
 
 
-#resume h4{
+.resume h4{
 	color:#4F4A52;
 
 }
 
-#resume h5{
+.resume h5{
 padding-left:6%;
-margin-bottom:-2%;
-color:#4F4A52;
+
+
 
 }
 
 
-#resume ul{
+.resume ul{
 	list-style-type:none;
 	
 	padding-left:9%;
 }
 
-#resume li{
+.resume li{
 	list-style:none;
 background-image: url('http://www.sfu.ca/~spw7/iat381/triangle.png');
 background-repeat:no-repeat;
 background-position:0 10%;
 padding-left:2%;
 margin-top:0.5%;
-font-size:75%;
-color:#4F4A52;
+
+
 }
-
-#resume p{
-	padding-left:6%;
-	font-size:80%;
-}
-
-
-
-
-
 
 
 /*
@@ -155,7 +152,7 @@ color:#4F4A52;
 }
 */
 
-
+/*
 #accordion {
 list-style: none;
 margin: 5% 0;
@@ -224,7 +221,7 @@ margin: -15px 15px 0 0;
 width: 450px;
 }
 
-
+*/
 
 
 footer{
