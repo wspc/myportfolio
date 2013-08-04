@@ -1,59 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>contact</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>r e s u m e</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="tablet.css" />
-
-	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-	<script type="text/javascript">
-	
-		$(function(){
-		
-			$("#blogbutton").css({
-				opacity: 0.3
-			});
-			$("#workbutton").css({
-				opacity: 0.3
-			});
-			$("#aboutbutton").css({
-				opacity: 0.3
-			});
-
-		
-            $("#bar li.button").click(function(){
-            	
-            	$clicked = $(this);
-            	
-            	if ($clicked.css("opacity") != "1" && $clicked.is(":not(animated)")) {
-            		
-            		$clicked.animate({
-            			opacity: 1,
-            			borderWidth: 5
-            		}, 600 );
-            		
-            	
-            		var idToLoad = $clicked.attr("id").split('-');
-            		
-            		
-            		$("#content").find("div:visible").fadeOut("fast", function(){
-        
-            			$(this).parent().find("#"+idToLoad[0]).fadeIn();
-            		})
-            	}
-            	
-            	
-            	$clicked.siblings(".button").animate({
-            		opacity: 0.3,
-            		borderWidth: 1
-            	}, 600 );
-            	
-            });
-		});
-		
-	</script>
 
 
 
@@ -63,48 +14,138 @@
  
  
 	<body>
-	<div id="box">
+	
 
 	<div id ="home">
-	
+<nav>
 	<div id="bar">
 
-		<li id="blogbutton" class="button">
-			<a href="blog.html"> <img src="img/nav/blog3.png" alt="blog" class="button"/></a>
-		</li>
+		<div id="bar2">
+	<ul>
+		<a href="mailto:spw7@sfu.ca"><img src="img/email.png" alt="email" height="50px" width="50px" class="button"/></a>
+		<a href="http://www.facebook.com/" ><img src="img/fb.png" alt="fb" height="50px" width="50px" class="button"/></a>
+		<a href="http://www.instagram.com/" ><img src="img/insta.png" alt="insta" height="50px" width="50px" class="button"/></a>
+	</ul>
+</div>
 
-		<li id="workbutton" class="button">
-			<a href="mywork.html"><img src="img/nav/work3.png" alt="work" class="button"/></a>
-		</li>
+		<div id="bar3">
+			<ul>
 
-		<li id="aboutbutton" class="button">
-			<a href="about.html"><img src="img/nav/about4.png" alt="works" class="button"/></a>
-		</li>
+		<li id="index-button" class="button"><a href="index.html" ><img src="img/3logo.png" alt="logo" class="button" /></a></li>
+		<li id="blog-button" class="button"><a href="blog.html"><img src="img/nav/blogblog.png" alt="blog" class="button" /></a></li>
+		<li id="work-button" class="button"><a href="work.html"><img src="img/nav/workwork3.png" alt="work" class="button" /></a></li>
+		<li id="resume-button" class="button"><a href="resume.html"><img src="img/nav/resumeresume.png" alt="resume" class="button" /></a></li>
 
-		<li id="resume" class="button">
-			<a href="resume.html"><img src="img/nav/resume3.png" alt="resume" class="button"/></a>
-		</li>
-
-
-
-	</div><!--end div home-->
 	
+		</ul>
+
+		</div><!--end div home-->
+		</nav>	
+
+
 	<div id="content">
 		
-
-		
-
-
-		
+		<div id="resume">
+		<ul>
+			<li>Self-motivated Economics student with strong interpersonal skills </li>
+			<li>Actively volunteering and contributing to the community</li>
+			<li>Outstanding customer service in multiple high pressure environment</li>
+		</ul>
+		</div>
 	
 
+		<h4><u>Skills</u></h4>
+		<h5>Communication Skills</h5>
+		<ul>
+			<li>Fluent in Cantonese and Mandarin</li>
+			<li>Beginner in Korean</li>
+		</ul>
+		<h5>Interpersonal Skills</h5>
+		<ul>
+			<li>Diligent and reliable individual with well-developed communication and interpersonal skills</li>
+			<li>Cooperative with other employees.TEAMWORK!</li>
+		</ul>
 
+		<h5>Technical Skills</h5>
+			<ul>
+				<li>Word Processing: Microsoft Word</li>
+				<li>Database and spreadsheet: Microsoft Excel and Microsoft Access</li>
+				<li>Presentation: Microsoft PowerPoint</li>
+				<li>Web page design: HTML, CSS, Adobe Dreamweaver and Flash </li>
+				<li>Graphic design: Adobe Photoshop, Illustrator and InDesign</li>
+
+			</ul>
+
+		<h5>Personal Skills</h5>
+		<ul>
+			<li>Completed Business Administrative Diploma</li>
+			<li>Experienced with mathematics and accounting</li>
+			<li>Hardworking and Enthusiastic in enriching my knowledge in the field of Economics</li>
+			<li>Knowledge of basic reception and bookkeeping  </li>
+		</ul>
+
+
+		<h4><u>Experiences</u></h4>
+		
+		<p><strong>Cashier</strong>, LONDON DRUGS (Richmond, BC) 2008- Present</p>
+		<ul>
+		<li>Provide courteous and quality service to customers while accurately processing transactions and bagging groceries</li>
+		<li>Strengthen communication skills through solving and settling issues raised by customers</li>
+		</ul>
+		<p><strong>Helping Hands</strong>, CHINESE COMMUNITY POLICING CENTER (Vancouver, BC) 2012</p>
+		<ul>
+		<li>Accurately direct and assist residents and tourists in Chinatown area</li>
+		<li>Translate and write articles for the Vancouver Police Department and newspapers to promote important community safety messages</li>
+		<li>Settle clients&#39; incidents and enquires by reporting incidents and suggesting solutions</li>
+		<li>Edit articles and photos for the summer newsletter</li>
+		</ul>
+	
+		<p><strong>Election Official</strong>, RICHMOND CITY ELECTION OFFICE (Richmond, BC) 2011 </p>
+		<ul>
+		<li>Verbal communication skills to welcome and provide instructions to voters in a friendly and efficient manner</li>
+		<li>Well-organized and responsible in setting up the voting station, the ballot box, and all voting materials.</li>
+		<li>Pay good attention to detail and ensure all voters vote fairly</li>
+		</ul>
+		
+		<p><strong>Youth summer camp leader</strong>, S.U.C.C.E.S.S. (Richmond, BC) 2010</p>
+		<ul>
+		<li>Efficiently organized daily events for a group of 30 multicultural youth immigrants by communicating with other leaders</li>
+		<li>Taught youth immigrants English and introduced them to Canadian culture in order to help the youth immigrants adjust to Canadian living</li>
+		</ul>
+		
+		<p><strong>X-Ray Operator</strong>, CONTEMPORARY SECURITY CANADA (Vancouver, BC) 2010</p>
+		<ul>
+		<li>Operated X-Ray machine and interpreted X-Ray images with careful attention to detail</li>
+		<li>Cooperated with teammates to ensure that prohibited items do not enter an Olympic Games Venue</li>
+		<li>Worked efficiently in fast-paced environment with high volume audiences of over 250 people per day</li>
+		</ul>
 		
 
+
+
+		<h4><u>Educations</u></h4>
+
+		<p><strong>Simon Fraser University</strong>, Burnaby, BC, 2011- Present. Completed two semesters of Bachelor&#39;s degree in Arts, Economics (ECON), minor in Interactive Arts + Technology (SIAT). Courses include:</p>
+			
+		<ul>
+			<li>Designed and created web sites</li>
+			<li>Hands-on practice of art and design in digital media</li>
+
+		</ul>
 	
-	<footer>
-		&#169;2013 Samantha Wong
-	</footer>
+		<p><strong>Kwantlen Polytechnic University</strong>, Richmond, BC, 2008-2011. 
+		Have completed Business Administrative Diploma. Courses include:</p>
+
+		<ul>
+			<li>
+	Used Microsoft Word processing software, created  PowerPoint presentations, constructed spreadsheets with tables, graphs, and over 50 formulas in Microsoft Excel</li>
+	<li> Accounting Mathematics: Business mathematics, including the mathematics of merchandising, interest, annuities and investment decisions</li>
+		</ul>
+
+
+ 
+		</div> 
+
 
 	</div>
 	

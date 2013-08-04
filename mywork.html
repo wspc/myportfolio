@@ -1,63 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>s a m a n t h a W o n g</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>w o r k</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 900px), only screen and (max-device-width: 900px)" href="tablet.css" />
-
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-	<script type="text/javascript">
 	
-		$(function(){
-		
-			$("#work-button").css({
-				opacity: 0.3
-			});
-			$("#blog-button").css({
-				opacity: 0.3
-			});
-			$("#about-button").css({
-				opacity: 0.3
-			});
-			$("#resume-button").css({
-				opacity: 0.3
-			});
-
-		
-            $("#bar li.button").click(function(){
-            	
-            	$clicked = $(this);
-            	
-            	
-            	if ($clicked.css("opacity") != "1" && $clicked.is(":not(animated)")) {
-            		
-            		$clicked.animate({
-            			opacity: 1,
-            			
-            		}, 600 );
-            		
-            		
-            		var idToLoad = $clicked.attr("id").split('-');
-            		
-            		
-            		$("#content").find("div:visible").fadeOut("fast", function(){
-            			
-            			$(this).parent().find("#"+idToLoad[0]).fadeIn();
-            		})
-            	}
-            	
-            	
-            	$clicked.siblings(".button").animate({
-            		opacity: 0.3,
-            		
-            	}, 600 );
-            	
-            });
-		});
-		
-	</script>
 
 
 
@@ -68,105 +18,95 @@
  
 	<body>
 	<div id ="home">
-	
+<nav>
+
 	<div id="bar">
 
-		<li id="index-button" class="button">
-			<img src="img/logo3.png" alt="logo" class="button" /></li>
+		<div id="bar2">
+	<ul>
+		<a href="mailto:spw7@sfu.ca"><img src="img/email.png" alt="email" height="50px" width="50px" class="button"/></a>
+		<a href="http://www.facebook.com/" ><img src="img/fb.png" alt="fb" height="50px" width="50px" class="button"/></a>
+		<a href="http://www.instagram.com/" ><img src="img/insta.png" alt="insta" height="50px" width="50px" class="button"/></a>
+	</ul>
+</div>
 
-		<li id="blog-button" class="button">
-	 <img src="img/nav/blog3.png" alt="blog" class="button"/></li>
+		<div id="bar3">
+			<ul>
 
-		<li id="work-button" class="button">
-		<img src="img/nav/work3.png" alt="work" class="button"/>
-		</li>
+		<li id="index-button" class="button"><a href="index.html" ><img src="img/3logo.png" alt="logo" class="button" /></a></li>
+		<li id="blog-button" class="button"><a href="blog.html"><img src="img/nav/blogblog.png" alt="blog" class="button" /></a></li>
+		<li id="work-button" class="button"><a href="mywork.html"><img src="img/nav/workwork3.png" alt="work" class="button" /></a></li>
+		<li id="resume-button" class="button"><a href="resume.html"><img src="img/nav/resumeresume.png" alt="resume" class="button" /></a></li>
 
-		<li id="about-button" class="button">
-			<img src="img/nav/about4.png" alt="works" class="button"/>
-		</li>
-
-		<li id="resume-button" class="button">
-			<img src="img/nav/resume3.png" alt="resume" class="button"/><li>
-
-
-	</div><!--end div home-->
 	
+		</ul>
 
-<div id="clear"></div>
+		</div><!--end div home-->
+		</nav>	
+	
+	
+	
+		
 
 	<div id="content">
 
 
-		<div id="index">
-
-		indexindex
-
-    	</div>
- 
 		
-	
-	
-		<div id="work">
-			workwrok
-		</div>
+		<div id="work" class="block">
 
-
-
-
-		<div id="blog">
-
-		<h4> home </h4>
-
-		</div>
-
-
-
-
-
-		<div id="resume">
-
-		resume resume 
-
-		</div> 
-
-
-		<div id="about">
-
-			about about
-
-
-		</div>
-
-<!--
-		<div id="proj">
-
-			<h4>Draft</h4>
-
-
-			<li><a href="img/project/pub1.png"> <img src="img/project/pub1.png" alt="pub1" height="50%" width="50%"/></a></li>
-			<li><a href="img/project/pub1-3.png"> <img src="img/project/pub1-3.png" alt="pub3-4" height="50%" width="50%"/></a></li>
-
-			<BR>
-
-
-			<h4>Final</h4>
-
-			<li><a href="img/project/pub4.png"> <img src="img/project/pub4.png" alt="pub4" height="50%" width="50%"/></a></li>
-
-			<li><a href="img/project/pub1-2.png"> <img src="img/project/pub1-2.png" alt="pub1-2" height="50%" width="50%"/></a></li>
-
-
-
-
--->
-
+			<h3>M a g a z i n e</h3>
 		
+
+			<ul id="accordion">
+			<li>
+			<img src="" />
+			<strong> section1</strong>
+			<br/>
+			Background
+
+			</li>
+			<li>
+			<img src="" />
+			<strong> section2</strong><br/>
+			Process
+			</li>
+			<li>
+			<img src=""/>
+			<strong>section3 </strong><br/>
+			Final
+			<img src="img/work/mag1.jpg" alt="mag1" height="50%" width="50%"/><img src="img/work/mag2.jpg" alt="mag2"/>
+			</li>
+			
+
+			</ul>
+			<p>para </p>
+
+
+			<h3> C e r e a l </h3>
+			xs
+			<ul id="accordion2">
+			<li>
+			<img src="" />
+			<strong> section1</strong><br/>
+			Background
+			</li>
+			<li>
+			<img src="" />
+			<strong> section2</strong><br/>
+			Process
+			</li>
+			<li>
+			<img src=""/>
+			<strong>section3 </strong><br/>
+			Final
+			</li>
+			
+			</ul>
+			<p>para </p>
+	
 </div>
 
-	<footer>
-		&#169;2013 Samantha Wong
-	</footer>
-
+	
 	</div>
 	
 
