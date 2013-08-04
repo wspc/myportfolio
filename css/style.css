@@ -1,37 +1,53 @@
 body, html{
 	font-family:'Josefin Sans', Arial, sans-serif;
-	font-size:100%;
+
 }
 
 #home{
-	margin: 2% auto;
-	max-width: 80%;	
+	margin: 3% auto;
+	background-color: blue;
+
+	
+	
+	
 
 }
+
+#bar{
+	
+	width:15%;
+	float:left;
+
+
+
+}
+
 
 #bar2{
 	display:inline-block;
  	float:right;
 }
 
-#bar2 a:hover{
+
+#bar3 a:hover{
 	opacity:0.6;
 }
 
 
 #bar ul{
 	list-style-type: none;
-	display:inline;
- 
+	
 }
 
 #bar3 {
   float: left;
-  display:inline;
+  position:relative;
+width:100%;
+background-color:red;
+  
 
 
 }
-
 
 
 
@@ -49,33 +65,44 @@ body, html{
 	
 
 	float:left;
-	margin-left:5%;
+	
 
 }
 
+
+.resume a:hover{
+	background-color:yellow;
+}
+
+.resume a:active{
+	background-color:blue;
+}
+
+.resume a:link{
+
+}
+
+#me {
+	background-color:;
+}
+
+/*
 #index{
 	margin:0% auto;
-	max-width:50%;
-}
-
-
-#blog{
-	margin:0 auto;
 	width:50%;
 }
 
-#blog p{
-	font-size:75%;
+
+.blog{
+	width:50%;
+
 }
 
-#blog img{
-	display:inline;
-	
-}
+
 
 
 #resume{
-	width:815px;
+	
 }
 
 
@@ -125,32 +152,32 @@ margin-top:0.5%;
 }
 
 
-/*
-#about a{
-	margin: 2%;
+
+.blog a{
+	margin: 3%;
 	border: 4% solid transparent;
-	display:inline;
-	border-radius:4%;
+	display:block;
+	border-radius:5%;
 	-webkit-border-radius:6px;
-	opacity:1;
-
-	-webkit-transition:all .2s ease-in;
-	-moz-transition: all .2s ease-in;
-	-o-transition:all .2s ease-in;
-	transition: all.2s ease-in;
-
-}
-
-#about a:hover{
-	border-color:white;
 	opacity:0.8;
+
+	-webkit-transition:all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition:all .3s ease-in;
+	transition: all.3s ease-in;
+
 }
 
-#about img{
+.blog a:hover{
+	border-color:white;
+	opacity:1;
+}
+
+.blog img{
 	-webkit-border-radius:4px;
 	border-radius:4px;
 }
-*/
+
 
 /*
 #accordion {
@@ -221,12 +248,14 @@ margin: -15px 15px 0 0;
 width: 450px;
 }
 
-*/
+
 
 
 footer{
-font-size:100%;
+
 margin-bottom:10%;
 text-align:center;
 font-family: 'Josefin Sans', sans-serif;
 }
+
+*/
