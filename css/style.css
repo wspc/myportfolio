@@ -3,10 +3,28 @@ body, html{
 
 }
 
+
+
+#bar{
+	margin:0% auto;
+}
+
+
+.contact-name{
+	float:left;
+margin-left:15%;
+
+
+}
+
+.icon{
+	float:left;
+	margin-right:15%;
+}
+
 #home{
-	margin: 0 auto;
-	background-color: blue;
-	display:inline-block;
+	margin: 0%auto;
+		display:inline-block;
 
 }
 
@@ -19,19 +37,13 @@ body, html{
 
 
 	
-}
 
-.bar3{
-	background-color:purple;
-	width:200px;
-	
 
-	
-}
 
-.bar3 img{
+
+#bar3 img{
 	display:inline;
-	padding-left:3%;
+	padding-right:3%;
 }
 
 
@@ -40,10 +52,7 @@ body, html{
 }
 
 
-#bar ul{
-	list-style-type: none;
-	
-}
+
 
 #bar {
 
@@ -65,16 +74,37 @@ margin:0% auto;
 	opacity:0.5;
 }
 
+.button2{
+	height:45px;
+	width:45px;
+}
+
+
+#myself{
+	height:80%;
+	width:90%;
+}
 
 #content{
 	
 width:80%;
 
-	float:right;
+float:right;
+padding-bottom:7%;
 	
 
 
 }
+
+.banner img{
+	
+	width:100%;
+}
+
+.banner a img{
+	width:100%;
+}
+
 
 
 
@@ -88,6 +118,29 @@ width:80%;
 }
 
 
+.blog{
+	
+	width:80%;
+
+}
+
+
+
+.img160{
+	height:160px;
+	width:160px;
+}
+
+
+.imgresize{
+	height:40%;
+	width:60%;
+}
+
+.imgresize2{
+	height:300px;
+	width:200px;
+}
 
 .resume a:hover{
 	background-color:#FCF6D9;
@@ -95,9 +148,26 @@ width:80%;
 
 
 
-.resume a:link{
+.resume ul{
+	list-style-type:none;
+	
+	padding-left:9%;
+}
+
+.resume li{
+	list-style:none;
+background-image: url('http://www.sfu.ca/~spw7/iat381/triangle.png');
+background-repeat:no-repeat;
+background-position:0 10%;
+padding-left:2%;
+margin-top:0.5%;
+
 
 }
+
+
+
+
 
 #r1 {
 	background-color:red;
@@ -110,26 +180,33 @@ background-color:#FCEFEE;
 
 
 
+
 .blog{
-	
 	width:80%;
-	padding:5%;
-
-
 }
-
-
-
 
 
 .blog-blog{
-	width:70%;
+	width:80%;
 }
+
+
+.banner a:link{
+	opacity:1.0;
+}
+
+.banner a:hover{
+	opacity:1.0;
+}
+
+
+
+
 
 
 .blog a{
 	
-	border: 3% solid transparent;
+
 	
 	border-radius:4%;
 	-webkit-border-radius:6px;
@@ -153,7 +230,7 @@ margin-right:3%;
 
 
 #work{
-	margin-top:3%;
+	
 width:80%;
 	float:left;
 	margin-left:auto;
@@ -164,6 +241,11 @@ width:80%;
 #work-bar{
 	margin:5%;
 }
+
+#work-work img{
+	width:100%;
+}
+
 
 
 
@@ -190,6 +272,8 @@ width:80%;
 #foodmag{
 
 	margin-top:5%;
+	font-family:'Josefin Sans', Arial, sans-serif;
+
 }
 
 

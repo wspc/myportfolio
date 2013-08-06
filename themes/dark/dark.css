@@ -77,7 +77,8 @@ Supports Thumbs: true
 }
 
 .theme-dark .nivo-caption {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family:'Josefin Sans', Arial, sans-serif;
+    letter-spacing: 1px;
 }
 .theme-dark .nivo-caption a {
     color:#fff;

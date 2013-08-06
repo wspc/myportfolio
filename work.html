@@ -3,8 +3,9 @@
 	<head>
 		<title>w o r k</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 925px), only screen and (max-device-width: 925px)" href="tablet.css" />
-		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 547px), only screen and (max-device-width: 547px)" href="mobile.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 941px), only screen and (max-device-width: 941px)" href="css/tablet.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 547px), only screen and (max-device-width: 547px)" href="css/mobile.css" />
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'/>
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
@@ -28,22 +29,25 @@ $(window).load(function() {
  
 	<body>
 	
+
+<div class="container">
+
 	<nav>
 <div id="bar">
-			<ul>
+		
 				
 
 
 			<div id="bar2">
-			<ul>
+		
 
-			<a href="mailto:spw7@sfu.ca" ><img src="img/email.png" alt="email" height="45px" width="45px" class="button2"/></a>
-			<a href="http://www.facebook.com/" id="fb" ><img src="img/fb.png" alt="fb" height="45px" width="45px" class="button2"/></a>
-			<a href="http://www.instagram.com/" ><img src="img/insta.png" alt="insta" height="45px" width="45px" class="button2"/></a>
-			</ul>
+			<a href="mailto:spw7@sfu.ca" ><img src="img/email.png" alt="email" class="button2"/></a>
+			<a href="http://www.facebook.com/" id="fb" ><img src="img/fb.png" alt="fb"  class="button2"/></a>
+			<a href="http://www.instagram.com/" ><img src="img/insta.png" alt="insta" class="button2"/></a>
+			
 		</div>
 
-		<div class="bar3">
+		<div id="bar3">
 	<a href="index.html" ><img src="img/3logo.png" alt="logo" class="button" /></a>
 	<a href="blog.html"><img src="img/nav/blogblog.png" alt="blog" class="button" /></a>
 			<a href="work.html"><img src="img/nav/workwork3.png" alt="work" class="button" /></a>
@@ -52,7 +56,7 @@ $(window).load(function() {
 
 
 
-			</ul>
+			
 			</div><!--end div home-->
 	
 	</div>
@@ -69,10 +73,16 @@ $(window).load(function() {
 
 		<div id="work" >
 
-			<a href="work-mag.html">magazine</a>
-			<a href="work-cereal.html">cereal</a>
+			<div class="banner">
+				<a href="work.html"><img src="img/work3.png" alt="ban-work"/></a>
+			</div>
+			<div id="work-work">
+			<a href="work-mag.html"><img src="img/magspread2.png" alt="mag"/></a>
+			<a href="work-cereal.html"><img src="img/infoban.png" alt="info" /></a>
+		</div>
 
-
+<!-- magazine banner photo taken from http://www.yumsugar.com/What-Your-Favorite-Food-Magazine-2009-6565814 -->
+<!-- infographic banner photo taken  from http://www.designinfographics.com/food-infographics/food-assistance / http://www.bestinfographics.co/wp-content/uploads/2013/02/wine-and-food-pairing-infographic.png / http://big.assets.huffingtonpost.com/Fast_Food_Fast_Facts_2_0.png  / http://thumbnails.visually.netdna-cdn.com/salt-mountains_50290aaeb00da.png--> 
 
 
 
@@ -80,7 +90,7 @@ $(window).load(function() {
 		</div>
 	</div>
 
-	
+	</div>
 
    
 </body>

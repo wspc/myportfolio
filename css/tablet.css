@@ -1,0 +1,27 @@
+.banner img{
+
+	width:120%;
+}
+
+
+
+
+
+.banner a img{
+
+	width:120%;
+}
+
+
+
+#bar3{
+	
+	display:inline-block;
+	float:left;
+
+	
+}
+
+#bar3 a img{
+	padding-right:50%;
+}
