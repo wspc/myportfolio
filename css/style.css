@@ -4,32 +4,38 @@ body, html{
 }
 
 #home{
-	margin: 3% auto;
+	margin: 0 auto;
 	background-color: blue;
-
-	
-	
-	
-
-}
-
-#bar{
-	
-	width:15%;
-	float:left;
-
-
-
-}
-
-
-#bar2{
 	display:inline-block;
- 	float:right;
+
+}
+
+#bar2 {
+	float:right;
+	width:200px;
+
+
 }
 
 
-#bar3 a:hover{
+	
+}
+
+.bar3{
+	background-color:purple;
+	width:200px;
+	
+
+	
+}
+
+.bar3 img{
+	display:inline;
+	padding-left:3%;
+}
+
+
+#bar a:hover{
 	opacity:0.6;
 }
 
@@ -39,16 +45,15 @@ body, html{
 	
 }
 
-#bar3 {
-  float: left;
+#bar {
+
   position:relative;
-width:100%;
-background-color:red;
+width:85%;
+
+margin:0% auto;
   
 
-
 }
-
 
 
 
@@ -63,28 +68,108 @@ background-color:red;
 
 #content{
 	
+width:80%;
 
-	float:left;
+	float:right;
+	
 	
 
 }
 
+.resume{
+
+	width:80%;
+}
+
+
 
 .resume a:hover{
-	background-color:yellow;
+	background-color:#FCF6D9;
 }
 
-.resume a:active{
-	background-color:blue;
-}
+
 
 .resume a:link{
 
 }
 
-#me {
-	background-color:;
+#r1 {
+	background-color:red;
 }
+
+.thispage{
+background-color:#FCEFEE;
+
+}
+
+
+
+.blog{
+	
+	width:80%;
+	padding:5%;
+
+
+}
+
+
+
+.blog-blog{
+	width:80%;
+}
+
+
+.blog a{
+	
+	border: 3% solid transparent;
+	
+	border-radius:4%;
+	-webkit-border-radius:6px;
+	opacity:0.8;
+
+	-webkit-transition:all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition:all .3s ease-in;
+	transition: all.3s ease-in;
+
+}
+
+.blog img{
+margin-right:3%;
+
+}
+.blog a:hover{
+	border-color:white;
+	opacity:1;
+}
+
+
+#work{
+
+	float:left;
+
+}
+
+.nivoSlider {
+    position:relative;
+    background:url(images/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+
+#foodmag{
+	max-width:80%;
+}
+
 
 /*
 #index{
